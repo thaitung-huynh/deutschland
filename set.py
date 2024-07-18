@@ -1,13 +1,11 @@
 n = int(input())
 
-a = set()
-for i in range(n):
-    a.add(int(input()))
+a = {int(val) for val in input().split(" ")}
+
 
 m = int(input())
-b = set()
-for i in range(m):
-    b.add(int(input()))
+b = {int(val) for val in input().split(" ")}
+
 
 c = a - b
 print(len(c))
