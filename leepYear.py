@@ -1,13 +1,17 @@
 def isLeap(year):
-    if (year % 4):
+    if (year % 4 == 0):
         if (year % 100) == 0:
-            return False
-        if (year % 400) == 0:
+            if (year % 400) == 0:
+                #print(year)
+                return True
+            else:
+                return False
+        else:
             return True
-        return False
     else:
         return False
 
+                
 
 year = int(input())
 
